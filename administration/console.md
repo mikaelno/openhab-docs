@@ -27,10 +27,10 @@ The default username/password is **openhab:habopen**, so enter `habopen` at the 
 
 The console can also be reached via secure shell connection ([SSH](https://en.wikipedia.org/wiki/Secure_Shell)).
 
-To reach the console using SSH, use the following command to connect to the localhost interface on TCP port 8101:
+To reach the console using SSH, use the following command to connect to the localhost interface on TCP port 22:
 
 ```shell
-ssh -p 8101 openhab@localhost
+ssh -p 22 openhab@localhost
 ```
 
 *Note:* By default, connection is only allowed from localhost, i.e. only from the machine running openHAB.
@@ -53,7 +53,7 @@ Password authentication
 Password:
 ```
 
-The default username/password is **openhab:habopen**, so enter `habopen` at the password prompt.
+The default username/password is **openhabian:openhabian**, so enter `openhabian` at the password prompt.
 
 The first successful connection triggers generation of the Karaf remote console key and will take a few seconds longer than subsequent attempts.
 
@@ -70,14 +70,14 @@ After successful connection and authentication, the console will appear:
  / __ \/ __ \/ _ \/ __ \/ /_/ / /| | / __  |
 / /_/ / /_/ /  __/ / / / __  / ___ |/ /_/ /
 \____/ .___/\___/_/ /_/_/ /_/_/  |_/_____/
-    /_/                        2.2.0
-                               Release Build
+    /_/                        2.3.0-1 (Release Build)
 
-Hit '<tab>' for a list of available commands
-and '[cmd] --help' for help on a specific command.
-Hit '<ctrl-d>' or type 'system:shutdown' or 'logout' to shutdown openHAB.
 
-openhab>
+Looking for a place to get started? Check out 'sudo openhabian-config' and the
+documentation at https://www.openhab.org/docs/installation/openhabian.html
+The openHAB dashboard can be reached at http://openHABianPi:8080
+To interact with openHAB on the command line, execute: 'openhab-cli --help'
+
 ```
 
 The command `help` is listing all available commands or describes a specific subsystem/command:
